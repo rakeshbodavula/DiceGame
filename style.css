@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #21325E; */
+    background-image:url("/images/bgcolor.jpg");
+    /* background-image: url("D:/Backup/programs/Web Development/Angela Yu projects/Dice Game/images/bgcolor.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#heading{
+    font-family: 'Lobster', cursive;
+    margin: 30px;
+    text-align: center;
+    color: #65C18C;
+}
+
+.player{
+    padding: 15px;
+    color: #FFC900;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.container{
+    padding: 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+}
+
+.roll{
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    border :#FFC900 solid;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #AEFEFF;
+    color: #FF5959;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.roll:hover{
+    animation: roll 3s linear infinite;
+}
+
+@keyframes roll {
+    /* 0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    } */
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#dice1,#dice2{
+    height: 10rem;
+    width: 10rem;
+}
+
+#result{
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #F76E11;
+}
+
+
+
+#tablediv{
+    display: flex;
+    margin: 9rem 4rem;
+}
+
+table,th,td{
+    height: 9rem;
+    width: 20rem;
+    color: #ffff;
+    margin: auto;
+    border: solid red;
+    text-align: center;
+    font-size: larger;
+    border-style: dotted;
+    padding: 2rem;
+}
+
+
+
+table{
+    border: 3px red dashed;
+}
