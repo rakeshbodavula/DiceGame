@@ -12,17 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="getNames()">
     <h1 id="heading">Welcome to Dice Game</h1>
     <h2 id="result">Result</h2>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 players">
-                <h3 class="player">Player1</h3>
+                <!-- <h3 class="player">Player1</h3> -->
+                <h3 class="player1Name"></h3>
                 <img src="images/dice1.png" alt="dice1" id="dice1">
             </div>
             <div class="col-sm-6 players">
-                <h3 class="player">Player2</h3>
+                <!-- <h3 class="player">Player2</h3> -->
+                <h3 class="player2Name"></h3>
                 <img src="images/dice5.png" alt="dice2" id="dice2">
             </div>
         </div>
@@ -35,8 +37,8 @@
         <table>
             <tr>
                 <th></th>
-                <th>Player1</th>
-                <th>Player2</th>
+                <th id="tbrow1">Player1</th>
+                <th id="tbrow2">Player2</th>
             </tr>
             <tr>
                 <th>Wins</th>

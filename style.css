@@ -19,7 +19,7 @@ body{
     color: #65C18C;
 }
 
-.player{
+.player1Name,.player2Name{
     padding: 15px;
     color: #FFC900;
     font-family: 'Pacifico', cursive;
