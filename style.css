@@ -79,8 +79,8 @@ body{
 }
 
 #dice1,#dice2{
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 #result{
