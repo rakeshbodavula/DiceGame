@@ -94,7 +94,7 @@ body{
 
 #tablediv{
     display: flex;
-    margin: 9rem 4rem;
+    margin: 9rem;
 }
 
 table,th,td{
