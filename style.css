@@ -19,6 +19,7 @@ body{
     color: #65C18C;
 }
 
+
 .player1Name,.player2Name{
     padding: 15px;
     color: #FFC900;
@@ -52,6 +53,7 @@ body{
     color: #FF5959;
     font-size: larger;
     font-weight: 900;
+    margin-bottom: 3rem;
 }
 
 .roll:hover{
@@ -94,7 +96,6 @@ body{
 
 #tablediv{
     display: flex;
-    margin: 9rem 2rem;
 }
 
 table,th,td{
