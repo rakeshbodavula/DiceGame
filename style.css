@@ -98,19 +98,13 @@ body{
 }
 
 table,th,td{
-    height: 9rem;
-    width: 20rem;
+    /* height: 9rem;
+    width: 20rem; */
     color: #ffff;
     margin: auto;
     border: solid red;
     text-align: center;
     font-size: larger;
     border-style: dotted;
-    padding: 2rem;
-}
-
-
-
-table{
-    border: 3px red dashed;
+    padding: 1rem;
 }
