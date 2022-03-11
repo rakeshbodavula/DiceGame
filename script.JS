@@ -1,4 +1,4 @@
-var wins=0,loses=0,draws=0,total=0;
+let wins=0,loses=0,draws=0,total=0;
 
 let player1,player2;
 function getNames(){
@@ -24,13 +24,13 @@ function getNames(){
     document.getElementsByClassName('player2Name')[0].innerHTML=`${player2}`;
 }
 function rollDice(){
-    // var wins=document.getElementById('win1').value;
-    // var loses=document.getElementById('lose1').value;
-    // var draws=document.getElementById('draws1').value;
+    // let wins=document.getElementById('win1').value;
+    // let loses=document.getElementById('lose1').value;
+    // let draws=document.getElementById('draws1').value;
     // document.getElementsByClassName('animation')[0].addclass('animate');
-    var one=Math.round(Math.random()*10)%6+1;
+    let one=Math.round(Math.random()*10)%6+1;
     document.getElementById('dice1').src=diceURL(one);
-    var two=Math.round(Math.random()*10)%6+1;
+    let two=Math.round(Math.random()*10)%6+1;
     document.getElementById('dice2').src=diceURL(two);
     if(one===two){
         document.getElementById('result').innerHTML="Draw";
@@ -55,7 +55,7 @@ function rollDice(){
 }
 
 function diceURL(rand){
-    var diceNum;
+    let diceNum;
     switch(rand){
         case 1:
             diceNum="images/dice1.png";
@@ -82,6 +82,11 @@ function diceURL(rand){
 }
 
 document.getElementById('animation').addEventListener("click",function (){
-     document.getElementById("animation").classList.remove("animate");
-    document.getElementById("animation").classList.add("animate");   
+    button = document.getElementById('animation');
+    button.disabled=true;
+    button.classList.add('animate');
+    setTimeout(()=>{
+        document.getElementById('animation').classList.remove('animate');
+        button.disabled=false;
+    },1000)
 });
