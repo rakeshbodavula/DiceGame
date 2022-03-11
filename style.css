@@ -56,8 +56,8 @@ body{
     margin-bottom: 3rem;
 }
 
-.roll:hover{
-    animation: roll 2.5s linear 2;
+.animate{
+    animation: roll 1s linear 1;
 }
 
 @keyframes roll {

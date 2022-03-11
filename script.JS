@@ -27,6 +27,7 @@ function rollDice(){
     // var wins=document.getElementById('win1').value;
     // var loses=document.getElementById('lose1').value;
     // var draws=document.getElementById('draws1').value;
+    // document.getElementsByClassName('animation')[0].addclass('animate');
     var one=Math.round(Math.random()*10)%6+1;
     document.getElementById('dice1').src=diceURL(one);
     var two=Math.round(Math.random()*10)%6+1;
@@ -44,6 +45,7 @@ function rollDice(){
         loses++;
     }
     total++;
+    // document.getElementById('animation').style.animation="roll .5s linear 1"
     document.getElementById('win1').innerHTML=`${wins}`;
     document.getElementById('lose1').innerHTML=`${loses}`;
     document.getElementById('draws1').innerHTML=`${draws}`;
@@ -79,3 +81,7 @@ function diceURL(rand){
     return diceNum;
 }
 
+document.getElementById('animation').addEventListener("click",function (){
+     document.getElementById("animation").classList.remove("animate");
+    document.getElementById("animation").classList.add("animate");   
+});
